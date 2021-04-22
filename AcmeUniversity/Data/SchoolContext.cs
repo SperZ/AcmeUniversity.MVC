@@ -29,7 +29,6 @@ namespace AcmeUniversity.Data
             modelBuilder.Entity<Department>().ToTable("Department");
             modelBuilder.Entity<OfficeAssignment>().ToTable("OfficeAssignment");
             modelBuilder.Entity<CourseAssignment>().ToTable("CourseAssignment");
-
             modelBuilder.Entity<CourseAssignment>().HasKey(c => new { c.CourseId, c.InstructorId });
         }
    
